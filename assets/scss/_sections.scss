@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent-color);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+@import './sections/_hero.scss';
+@import './sections/_features.scss';
+@import './sections/_call-to-action.scss';
+@import './sections/_faq.scss';
+@import './sections/_testimonials-2.scss';
+@import './sections/_about-2.scss';
+@import './sections/_team-2.scss';
+@import './sections/_contact.scss';
+@import './sections/_get-a-quote.scss';
+@import './sections/_starter-section.scss';
+@import './sections/_blog-hero.scss';
+@import './sections/_blog-details.scss';
+@import './sections/_blog-posts-2.scss';
+@import './sections/_services.scss';
